@@ -1,8 +1,7 @@
-
 import React from 'react';
 import AnimatedTransition from '@/components/AnimatedTransition';
 import { motion } from 'framer-motion';
-import { Check, Battery, Zap, Settings, Tool, Lightning } from 'lucide-react';
+import { Check, Battery, Zap, Settings, Wrench, Cpu } from 'lucide-react';
 
 const serviceTypes = [
   {
@@ -31,14 +30,14 @@ const serviceTypes = [
     title: "Electric Motor Servicing & Repair",
     description: "We provide expert electric motor servicing and repair to ensure optimal performance and longevity. Our team specializes in diagnosing, maintaining, and refurbishing BLDC and hub motors used in electric vehicles.",
     image: "/lovable-uploads/7becadb7-b958-4721-a73e-b9415ecc87ea.png",
-    icon: <Tool className="w-6 h-6" />
+    icon: <Wrench className="w-6 h-6" />
   },
   {
     id: 5,
     title: "A-Z Solutions of Electric Vehicle",
     description: "All types of services for Electric Vehicles - comprehensive maintenance and repair solutions.",
     image: "/lovable-uploads/3ef53618-46ad-42ca-b5f5-8fa440fd1c0d.png",
-    icon: <Lightning className="w-6 h-6" />
+    icon: <Cpu className="w-6 h-6" />
   },
 ];
 
@@ -117,7 +116,6 @@ const Services: React.FC = () => {
             </p>
           </div>
 
-          {/* Service Categories */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -150,7 +148,6 @@ const Services: React.FC = () => {
             ))}
           </motion.div>
 
-          {/* Detailed Services */}
           <div className="space-y-12 mb-16">
             {detailedServices.map((service) => (
               <motion.div 
@@ -196,7 +193,6 @@ const Services: React.FC = () => {
             ))}
           </div>
 
-          {/* Before-After Examples */}
           <div className="mt-16">
             <h2 className="text-2xl font-bold text-center mb-8">Our Restoration Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

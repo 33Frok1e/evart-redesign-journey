@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import AnimatedTransition from '@/components/AnimatedTransition';
-import { ArrowRight, Battery, Zap, Tool, Leaf, Cpu, Wrench } from 'lucide-react';
+import { ArrowRight, Battery, Zap, Wrench, Leaf, Cpu } from 'lucide-react';
 
 const heroVariants = {
   hidden: { opacity: 0 },
@@ -357,7 +356,7 @@ const Index: React.FC = () => {
             
             <div className="p-6 bg-white rounded-xl shadow-md flex flex-col h-full hover:shadow-lg transition-all duration-300">
               <div className="mb-4 text-green-600">
-                <Tool className="w-10 h-10" />
+                <Wrench className="w-10 h-10" />
               </div>
               <h3 className="text-xl font-bold mb-3">Complete EV Solutions</h3>
               <p className="text-gray-600">All types of services for Electric Vehicles - comprehensive maintenance and repair solutions.</p>
