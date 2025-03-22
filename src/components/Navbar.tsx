@@ -6,11 +6,11 @@ import { cn } from '@/lib/utils';
 
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Projects', path: '/projects' },
-  { name: 'Services', path: '/services' },
-  { name: 'Blog', path: '/blog' },
-  { name: 'Contact', path: '/contact' }
+  { name: 'Product', path: '/products' },
+  { name: 'Service', path: '/services' },
+  { name: 'Training', path: '/training' },
+  { name: 'About Us', path: '/about' },
+  { name: 'Contact Us', path: '/contact' }
 ];
 
 const Navbar: React.FC = () => {
@@ -39,28 +39,28 @@ const Navbar: React.FC = () => {
     <header 
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out',
-        isScrolled ? 'bg-white/80 backdrop-blur-md shadow-soft py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-soft py-3' : 'bg-white/80 py-4'
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link 
           to="/" 
-          className="text-2xl font-heading font-bold text-foreground"
+          className="text-2xl font-heading font-bold text-green-600"
         >
-          EV-ART
+          EVART
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
               className={cn(
-                "text-sm font-medium transition-colors duration-300 link-effect",
+                "text-sm font-medium transition-colors duration-300",
                 location.pathname === link.path
-                  ? "text-primary"
-                  : "text-foreground/80 hover:text-foreground"
+                  ? "text-green-600 font-semibold"
+                  : "text-gray-700 hover:text-green-600"
               )}
             >
               {link.name}
@@ -98,8 +98,8 @@ const Navbar: React.FC = () => {
                 className={cn(
                   "py-2 text-base font-medium transition-colors duration-300",
                   location.pathname === link.path
-                    ? "text-primary"
-                    : "text-foreground/80 hover:text-foreground"
+                    ? "text-green-600 font-semibold"
+                    : "text-gray-700 hover:text-green-600"
                 )}
               >
                 {link.name}
