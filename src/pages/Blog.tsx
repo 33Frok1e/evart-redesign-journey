@@ -10,7 +10,7 @@ const blogPosts = [
   {
     id: 1,
     title: 'The Importance of Typography in Design',
-    excerpt: 'Typography is more than just selecting fonts; it's about creating a visual hierarchy, enhancing readability, and conveying the right emotions.',
+    excerpt: "Typography is more than just selecting fonts; it's about creating a visual hierarchy, enhancing readability, and conveying the right emotions.",
     date: 'May 15, 2023',
     author: 'Jane Cooper',
     category: 'Design',
@@ -30,7 +30,7 @@ const blogPosts = [
   {
     id: 3,
     title: 'The Evolution of Web Design: Past, Present, and Future',
-    excerpt: 'From the early days of static HTML pages to today's interactive experiences, web design has come a long way and continues to evolve.',
+    excerpt: "From the early days of static HTML pages to today's interactive experiences, web design has come a long way and continues to evolve.",
     date: 'March 10, 2023',
     author: 'Emily Davis',
     category: 'Web Design',
